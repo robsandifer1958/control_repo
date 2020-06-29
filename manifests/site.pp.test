@@ -1,0 +1,11 @@
+
+node default {exec { "Test":
+        command => "/usr/bin/echo `date` > /tmp/sample.txt ",
+        }
+ }
+
+node 'node2.localdomain' {
+exec { "Test":
+        command => "/usr/bin/echo `date` > /tmp/sample.txt ",
+        }
+}

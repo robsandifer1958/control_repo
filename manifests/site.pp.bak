@@ -1,0 +1,6 @@
+
+node default { }
+
+node 'node2' {
+include lamp
+}
